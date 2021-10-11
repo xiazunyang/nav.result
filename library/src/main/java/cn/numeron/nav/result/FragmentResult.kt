@@ -11,7 +11,7 @@ const val RESULT_CANCELED = 0
 
 const val RESULT_UNMATCHED = -1
 
-inline fun <reified A : FragmentActivity> A.fragmentResultEnabled() {
+inline fun <reified A : FragmentActivity> A.installNavResult() {
     supportFragmentManager.registerFragmentLifecycleCallbacks(FragmentLifecycleListener, true)
 }
 
